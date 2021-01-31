@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart LandReg - Services</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" href="Images/kglogo.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="home.css">
+
+        <style>
+            
+#l1
+        {
+            background-color: black;
+            color:skyblue; 
+            font-family: 'Pacifico', cursive;
+            font-size: 40px;
+            padding: 0.5%;
+            background-size: cover;
+            text-shadow: 3px 2px whitesmoke;
+                    }
+        #mb
+        {
+            
+            overflow: hidden;
+            background-color: skyblue;
+            
+        }
+        
+        #mb a
+        {
+           
+            float: left;
+            text-decoration: none;
+            font-size: 17px;
+            text-align: center;
+            padding: 14px 16px;
+            color: black;
+            font-family: 'Acme', sans-serif;
+        }
+        #mb a:hover,#dropdown:hover #dropbtn
+        {
+            background-color: rgb(102, 101, 101);
+            color: black;
+            font-size: 19px;
+        }
+        #mb a.active
+        {
+            background-color: black;
+            color: skyblue;
+        }
+        #ho
+        {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+        #dropdown
+        {
+            float: left;
+            overflow: hidden;
+        }
+        #dropdown #dropbtn
+        {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            text-align: center;
+            padding: 14px 16px;
+            color: black;
+            font-family: 'Acme', sans-serif;
+            background-color: inherit;
+            margin: 0;
+        }
+        #drop-con
+        {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            min-width: 160px;
+            background-color: skyblue;
+            color: black;
+
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        #drop-con a
+        {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        #drop-con a:hover
+        {
+            background-color: black;
+            color: skyblue;
+        }
+        #dropdown:hover #drop-con
+        {
+            display:block;
+        }
+        #vl 
+        {
+  			border-left: 3px solid gray;
+  			height: 350px;
+       }
+
+
+
+
+h1
+{
+ text-align:center;
+ font-family: 'Acme', sans-serif;
+}
+
+body{
+background-color:#66c2ff;
+}
+
+.courseicon
+{
+    border-radius: 30%;
+}
+
+.a
+{
+border:10px solid black;
+margin-left:300px;
+margin-right:500px;
+border-width:2px;
+border-radius:30px;
+width:300px;
+height:400px;
+
+background-color:white;
+}
+
+.a,.b,.c,.d:hover
+{
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+.a,.b,.c,.d
+{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.b
+{
+position:absolute;
+border:10px solid black;
+
+margin-right:500px;
+border-width:2px;
+border-radius:30px;
+width:300px;
+height:400px;
+margin-top:-420px;
+margin-left:50%;
+background-color:white;
+}
+
+.c
+{
+position:relative;
+border:10px solid black;
+margin-left:300px;
+margin-right:500px;
+border-width:2px;
+border-radius:30px;
+width:300px;
+height:400px;
+margin-left:50%px;
+margin-top:5%;
+background-color:white;
+}
+
+
+.d
+{
+
+position:absolute;
+border:10px solid black;
+margin-left:300px;
+margin-right:500px;
+border-width:2px;
+border-radius:30px;
+width:300px;
+height:400px;
+margin-top:-420px;
+margin-left:50%;
+background-color:white;
+
+}
+
+            body
+            {
+              background-image: linear-gradient( 	 #85d3d3,#696969);
+            }
+            .title
+            {
+                font-family: 'Zilla Slab', serif;
+                font-weight: bolder;
+                font-size: 50px;
+                color: rgb(253, 249, 5); 
+            }
+
+            .title
+            {
+                position:sticky;              
+                background-color: #33adff;
+                text-decoration: none;
+            }
+            .btn-group button
+             {
+               position: sticky;
+                background-color:#33adff;
+                border: 1px solid #33adff; 
+                font-family: 'Zilla Slab', serif;
+                font-weight: bolder;
+                font-size: 30px;
+                color: white; 
+                
+                padding: 10px 24px;
+                cursor: pointer; 
+                float: right; 
+              }
+              .btn-group button a:link,a:visited
+              {
+                text-decoration: none;
+                color: white; 
+
+              }
+              .btn-group button a:hover
+              {
+                text-decoration: none;
+                color: #33adff; 
+                font-size: 30px;
+
+              }
+
+              /* Clear floats (clearfix hack) */
+              .btn-group:after {
+                content: "";
+                text-decoration: none;
+                clear: both;
+                display: table;
+              }
+
+              .btn-group button:not(:last-child) {
+                border-right: none; /* Prevent double borders */
+              }
+
+              /* Add a background color on hover */
+              .btn-group button:hover 
+              {
+                background-color: #ffffb3;
+                color: #000;
+                font-weight: bolder;
+                font-size: 20px;
+                color: #33adff; 
+                text-decoration: none;
+              }
+              
+            .bot
+            {
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                
+            }
+            .sbot
+            {
+                width: 100px;
+                height: 150px;
+                border-radius:300px;
+            }
+           
+              .bg1
+              {
+                position:relative;
+                top: 0;
+                left: 0;
+              } 
+              .mq img
+              {
+                width: 500px;
+                height:300px;
+                position: absolute;
+                top:60px;
+                left:80px;
+                
+              }
+
+
+              .navbar
+               {
+              overflow: hidden;
+              background-color: #ffff99;
+            }
+
+            .navbar a {
+              float: left;
+              font-family: 'Amaranth', sans-serif;
+              font-weight: bolder;
+              font-size: 16px;
+              color: #00ace6;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+              font-size: 16px;  
+              border: none;
+              outline: none;
+              color: #00ace6;
+              padding: 14px 16px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+              background-color:#f2f6f8 ;
+              color:#04446e;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #4dadec;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+
+            .dropdown-content a {
+              float: none;
+              color:white;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+
+            .dropdown-content a:hover {
+              background-color: rgb(243, 242, 242);
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+        </style>
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet"> <!--font-family: 'Zilla Slab', serif;-->
+<link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet"> <!--font-family: 'Amaranth', sans-serif;-->
+  </head>
+
+<body bgcolor="#80ccff">
+
+
+    
+     <div class="title">
+        <div class="btn-group">
+                <img src="Images/cybersecurity.jpg" alt="logo" style="height: 60px">
+                <label class="tit">Smart Land Registeration</label>
+                
+                
+                <button><a>Contact</a></button>
+                <button><a href="login.html">Profile</a></button>
+                <button><a href="services.html">Services</a></button>
+                <button><a>Home</a></button>
+        </div>
+    </div>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Home Page</button>
+       <!-- <div class="dropdown-content">
+            <a href="mobile.html">Mobile Phones</a>
+            <a href="#">Laptops</a>
+            <a href="#">Mobile Accessories</a>
+            <a href="#">Computer Peripherals</a>
+            <a href="#">Speakers</a>
+        </div>-->
+      </div>
+       <div class="dropdown">
+          <button class="dropbtn">E Services</a></button>
+          <div class="dropdown-content">
+              <a href="mobile.html">Animal Evidence</a>
+              <a href="#">Land Details Document</a>
+              <a href="register.html">Land Registeration</a>
+              <a href="#">Transfer of Property</a>
+              <a href="#">Will Declaration</a>
+          </div>
+       </div>
+       <div class="dropdown">
+          <button class="dropbtn">Guide </a></button>
+          <div class="dropdown-content">
+            <a href="mobile.html">Municipality Land</a>
+            <a href="#">Agriculture Land</a>
+            <a href="#">Industrial Land</a>
+            <a href="#">Commercial Land</a>
+            <a href="#">Housing Land</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Map</a></button>
+            <div class="dropdown-content">
+                <a href="mobile.html">Plot no</a>
+                <a href="#">Survey no</a>
+                <a href="#">Address</a>
+               
+            </div>
+       </div>
+       <div class="dropdown">
+          <button class="dropbtn">Circulars</a></button>
+          <div class="dropdown-content">
+              <a href="mobile.html">from 2020</a>
+              <a href="#">General Laws and Rules</a>
+              
+              
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Help</a></button>
+            <div class="dropdown-content">
+                <a href="mobile.html">Complaint Registeration</a>
+                
+            </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn">Further</a></button>
+        <div class="dropdown-content">
+            <a href="mobile.html">Search</a>
+            <a href="#">description of views</a>
+            <a href="#">Document status</a>
+            <a href="#">Identity details</a>
+           
+        </div>
+        </div>
+    </div>
+    
+
+<br>
+
+
+
+<div class="a">
+<a href="webtech.html"><img class="courseicon" src="Images/loc.png" alt="Land verification" width="300px" height="200px"></a><br>
+<center>Verify your Land Details</center>
+<p style="color:red";></p>
+<br><br>
+<img src="Images/plot.png" alt="Wlog" width="30px" height="30px"> Survey Number<br>
+<img src="Images/survey.png" alt="week" width="30px" height="30px">Plot Number<br>
+Know your Jurisdiction
+</div>
+
+<div class="b">
+    <a href="webtech.html"><img class="courseicon" src="Images/ani.png" alt="Land verification" width="300px" height="200px"></a><br>
+    <center>Apply for Animal Evidence</center>
+    <p style="color:red";></p>
+    <br><br>
+    <img src="Images/plot.png" alt="Wlog" width="30px" height="30px"> <br>
+    <img src="Images/survey.png" alt="week" width="30px" height="30px">Plot Number<br>
+    Know your Jurisdiction
+</div>
+
+<div class="c">
+    <a href="webtech.html"><img class="courseicon" src="Images/sd.jpg" alt="Land verification" width="300px" height="200px"></a><br>
+    <center>Stamp Duty Calculation</center>
+    <p style="color:red";></p>
+    <br><br>
+    <img src="Images/plot.png" alt="Wlog" width="30px" height="30px"> Survey Number<br>
+    <img src="Images/survey.png" alt="week" width="30px" height="30px">Plot Number<br>
+    Know your Jurisdiction
+</div>
+
+<div class="d">
+    <a href="webtech.html"><img class="courseicon" src="Images/bui.png" alt="Land verification" width="300px" height="200px"></a><br>
+    <center>Building Value Calculation</center>
+    <p style="color:red";></p>
+    <br><br>
+    <img src="Images/plot.png" alt="Wlog" width="30px" height="30px"> Survey Number<br>
+    <img src="Images/survey.png" alt="week" width="30px" height="30px">Plot Number<br>
+    Know your Jurisdiction
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

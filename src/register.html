@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart LandReg</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" href="Images/kglogo.jpg" type="image/gif" sizes="16x16">
+        
+        <link rel="stylesheet" href="/src/css/register.css">
+            
+            <script>
+                function myfn()
+                {
+                  window.alert("Registration Successful");
+                }
+                function validate()
+                {
+                    var x = document.forms["mf"]["survey"].value;
+                    if (x=="")
+                    {	
+                        window.alert("Survey Number must be filled out");
+                        return false;
+                    }
+                    var y = document.forms["mf"]["patta"].value;
+                    if (y=="")
+                    {	
+                        window.alert(" Patta Number must be filled out");
+                        return false;
+                    }
+                    var z = document.forms["mf"]["village"].value;
+                    if (z=="")
+                    {	
+                        window.alert("Village name must be filled out");
+                        return false;
+                    }
+                    var d = document.forms["mf"]["district"];
+                    if (d.selectedIndex=="")
+                    {	
+                        window.alert("Please choose District");
+                        return false;
+                    }
+                    var s = document.forms["mf"]["state"];
+                    if (s.selectedIndex=="")
+                    {	
+                        window.alert("Please choose State");
+                        return false;
+                    }
+                    var b = document.forms["mf"]["acker"].value;
+                    if (b=="")
+                    {	
+                        window.alert("Number of Acker must be filled out");
+                        return false;
+                    }
+                    var dd = document.forms["mf"]["date"].value;
+                    if (dd=="")
+                    {	
+                        window.alert("Date must be filled out");
+                        return false;
+                    }		
+                    else{
+                      alert("Land Details have been Registered Successfully.After Verification You will receive a status updaye mail");
+                    }
+              }
+            </script>
+            <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet"> <!--font-family: 'Zilla Slab', serif;-->
+            <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet"> <!--font-family: 'Amaranth', sans-serif;-->
+</head>
+            
+<body >
+
+  <video autoplay muted loop id="myVideo">
+    <source src="/src/images/720p.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="whole">
+    
+     <div class="title">
+        <div class="btn-group">
+                <img src="Images/cybersecurity.jpg" alt="logo" style="height: 60px">
+                <label class="tit">Smart Land Registeration</label>
+        </div>      
+        <div class="menu1">
+                <button><a href="home.html">Home</a></button>
+                <button><a href="services.html">Services</a></button>
+                <button><a>Contact</a></button>
+                <button><a href="login.html">Profile</a></button>
+        </div>
+        
+    </div>
+<br>
+<div class="rform">
+		<form align="center" name="mf" method="post" action="../src/home.html" onsubmit="return validate();">
+		<center> 
+      <td><h1 style="color:white;"><b>Registration Form<b></h1></td>
+    </center>
+		<table border='0' width='600px' cellpadding='0' cellspacing='0' align='center'>
+		<tr>
+			<td align='left'><b>Name of the owner:</b></td>
+			<td><input type='text' id="text" name='owner' required></td>
+		</tr>
+		<tr> <td>&nbsp;</td></tr>
+		<tr>
+			<td align='left'><b>Name of the previous owner:<b></td>
+			<td><input type='text' id="text"  name='previous' required></td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>Survey number:<b></td>
+			<td><input type='text' id="text"  name='survey'></td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>Patta number:<b></td>
+			<td><input type='text' id="text" name='patta'></td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>Village:<b></td>
+			<td><input type='text' id="text" name='village'></td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>District:<b></td>
+			<td>
+			<select name="district" id="text1">
+				<option></option>
+				<option value="Thanjavur">chennai</option>
+				<option value="trichy">Trichy</option>
+				  <option value="Karur">coimbatore</option>
+				  <option value="Erode">Erode</option>
+				  <option value="Tiruppur">Tiruppur</option>
+				  <option value="Namakkal">Salem</option>
+			</select>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>Upload Land Documents:<b></td>
+			<td>
+			<input type="file" multiple>
+		   </td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>Number of ackers:<b></td>
+			<td><input type='text' id="text"  name='acker'></td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		<tr>
+			<td align='left'><b>Registeration Date:<b></td>
+			<td><input type='date' id="text"  name='date' required></td>
+		</tr>
+		<tr> <td>&nbsp;</td> </tr>
+		
+		<tr> <td>&nbsp;</td></tr>
+		<table border='0' cellpadding='0' cellspacing='0' width='480px' text-align='center'>
+			<div class="bottom-container">
+				<div class="row">
+					<div class="col">
+					<input type="submit" name="submit_form" value=" Submit " onclick="myfn()">
+         
+					</div>
+				</div>
+		</table>
+    </form>
+  </div>
+
+
+  </div>
+	</body>
+</html>
